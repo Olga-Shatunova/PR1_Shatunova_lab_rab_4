@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns="XSD2.xsd"> Справочник оборудования/приборов <!—обратите внимание на ссылку на xsd —> <br />
+
+<Pribor> 
+<CodPribora>Код прибора</CodPribora>
+<NazvaniePribora>Название прибора</NazvaniePribora>
+<TypePribora>Тип прибора</TypePribora>
+<DateProizvodstva>Дата производства</DateProizvodstva>
+<MaterialnoOtvetstvennoeFace>Материально ответственное лицо</MaterialnoOtvetstvennoeFace>
+</Pribor>
+
+<Pribor>
+<CodPribora>001</CodPribora>
+<NazvaniePribora>микроволновая печь</NazvaniePribora>
+<TypePribora>электроприбор</TypePribora>
+<DateProizvodstva>02.06.96</DateProizvodstva>
+<MaterialnoOtvetstvennoeFace>производитель</MaterialnoOtvetstvennoeFace>
+</Pribor>
+
+<Pribor>
+<CodPribora>002</CodPribora>
+<NazvaniePribora>плойка</NazvaniePribora>
+<TypePribora>электроприбор</TypePribora>
+<DateProizvodstva>02.06.10</DateProizvodstva>
+<MaterialnoOtvetstvennoeFace>производитель</MaterialnoOtvetstvennoeFace>
+</Pribor>
+
+<Pribor>
+<CodPribora>003</CodPribora>
+<NazvaniePribora>фен</NazvaniePribora>
+<TypePribora>электроприбор</TypePribora>
+<DateProizvodstva>22.06.12</DateProizvodstva>
+<MaterialnoOtvetstvennoeFace>производитель</MaterialnoOtvetstvennoeFace>
+</Pribor>
+
+<Pribor>
+<CodPribora>004</CodPribora>
+<NazvaniePribora>утюг</NazvaniePribora>
+<TypePribora>электроприбор</TypePribora>
+<DateProizvodstva>12.06.94</DateProizvodstva>
+<MaterialnoOtvetstvennoeFace>производитель</MaterialnoOtvetstvennoeFace>
+</Pribor>
+
+<Pribor>
+<CodPribora>005</CodPribora>
+<NazvaniePribora>утюжок</NazvaniePribora>
+<TypePribora>электроприбор</TypePribora>
+<DateProizvodstva>02.06.14</DateProizvodstva>
+<MaterialnoOtvetstvennoeFace>производитель</MaterialnoOtvetstvennoeFace>
+</Pribor>
+
+</Root>
