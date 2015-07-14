@@ -1,0 +1,49 @@
+<html>
+<body>
+<h1>Сотрудники</h1>
+<div>
+<b>Код сотрудника:</b> <span id="worker"></span><br />
+<b>Фамилия:</b> <span id="family"></span><br />
+<b>Имя:</b> <span id="name"></span><br />
+<b>Отчество:</b> <span id="patronymic"></span><br />
+<b>Должность:</b> <span id="position"></span><br />
+<b>Дата приема на работу:</b> <span id="date"></span>
+</div>
+<script>
+txt="<note>";
+txt=txt+"<worker>001</worker>";
+txt=txt+"<family>Иванов</family>";
+txt=txt+"<name>Алексей</name>";
+txt=txt+"<patronymic>Петрович</patronymic>";
+txt=txt+"<position>Программист</position>";
+txt=txt+"<date>11.12.11</date>";
+txt=txt+"</note>";
+if (window.DOMParser)
+   {
+   parser=new DOMParser();
+   xmlDoc=parser.parseFromString(txt,"text/xml");
+   }
+else // Internet Explorer
+   {
+   xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+   xmlDoc.async=false;
+   xmlDoc.loadXML(txt);
+   }
+document.getElementById("worker").innerHTML=
+xmlDoc.getElementsByTagName("worker")[0].childNodes[0].nodeValue;
+document.getElementById("family").innerHTML=
+xmlDoc.getElementsByTagName("family")[0].childNodes[0].nodeValue;
+document.getElementById("name").innerHTML=
+xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+document.getElementById("patronymic").innerHTML=
+xmlDoc.getElementsByTagName("patronymic")[0].childNodes[0].nodeValue;
+document.getElementById("position").innerHTML=
+xmlDoc.getElementsByTagName("position")[0].childNodes[0].nodeValue;
+document.getElementById("date").innerHTML=
+xmlDoc.getElementsByTagName("date")[0].childNodes[0].nodeValue;
+</script>
+</body>
+</html>
+
+
+
