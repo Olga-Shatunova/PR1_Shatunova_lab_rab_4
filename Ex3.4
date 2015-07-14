@@ -1,0 +1,48 @@
+<html>
+<body>
+<h1>Цветочная продукция</h1>
+<div>
+<b>Код лекарства:</b> <span id="fl"></span><br />
+<b>Название лекарства:</b><span id="na"></span><br />
+<b>Показания к применению:</b> <span id="he"></span><br />
+<b>Еденицы измерения:</b> <span id="pr"></span><br />
+<b>Количество в упаковке:</b> <span id="po"></span><br />
+<b>Название производителя:</b> <span id="p"></span><br />
+</div>
+<script>
+txt="<note>";
+txt=txt+"<fl>001</fl>";
+txt=txt+"<na>базирон</na>";
+txt=txt+"<he>для наружного применения</he>";
+txt=txt+"<pr>100 г.</pr>";
+txt=txt+"<po>1 шт.</po>";
+txt=txt+"<p>Galderma.</p>";
+txt=txt+"</note>";
+if (window.DOMParser)
+   {
+   parser=new DOMParser();
+   xmlDoc=parser.parseFromString(txt,"text/xml");
+   }
+else // Internet Explorer
+   {
+   xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+   xmlDoc.async=false;
+   xmlDoc.loadXML(txt);
+   }
+document.getElementById("fl").innerHTML=
+xmlDoc.getElementsByTagName("fl")[0].childNodes[0].nodeValue;
+document.getElementById("na").innerHTML=
+xmlDoc.getElementsByTagName("na")[0].childNodes[0].nodeValue;
+document.getElementById("he").innerHTML=
+xmlDoc.getElementsByTagName("he")[0].childNodes[0].nodeValue;
+document.getElementById("pr").innerHTML=
+xmlDoc.getElementsByTagName("pr")[0].childNodes[0].nodeValue;
+document.getElementById("po").innerHTML=
+xmlDoc.getElementsByTagName("po")[0].childNodes[0].nodeValue;
+document.getElementById("p").innerHTML=
+xmlDoc.getElementsByTagName("p")[0].childNodes[0].nodeValue;
+
+</script>
+</body>
+</html>
+
