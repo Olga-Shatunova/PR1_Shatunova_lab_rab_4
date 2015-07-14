@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns="XSD4.xsd"> Лекарственные средства<!—обратите внимание на ссылку на xsd —> <br />
+<Medicine> 
+<CodMedicine>Код лекарства</CodMedicine>
+<NameMedicine>Название лекарства</NameMedicine>
+<Indications>Показания к применению</Indications>
+<Unitofmeasure>Еденица измерения</Unitofmeasure>
+<Number>Количество в упаковке</Number>
+<manufacturerName>Название производителя</manufacturerName>
+</Medicine>
+<Medicine>
+<CodMedicine>001</CodMedicine>
+<NameMedicine>Базирон</NameMedicine>
+<Indications>Для наружного применения</Indications>
+<Unitofmeasure>100 г.</Unitofmeasure>
+<Number>1 шт.</Number>
+<manufacturerName>Galderma.</manufacturerName>
+</Medicine>
+<Medicine>
+<CodMedicine>002</CodMedicine>
+<NameMedicine>Nise</NameMedicine>
+<Indications>Для внутреннего применения</Indications>
+<Unitofmeasure>90 г.</Unitofmeasure>
+<Number>10 шт.</Number>
+<manufacturerName>Др Редди`с.</manufacturerName>
+</Medicine>
+<Medicine>
+<CodMedicine>003</CodMedicine>
+<NameMedicine>Парацетамол</NameMedicine>
+<Indications>Для внутреннего применения</Indications>
+<Unitofmeasure>100 г.</Unitofmeasure>
+<Number>10 шт.</Number>
+<manufacturerName>Асфарма.</manufacturerName>
+</Medicine>
+<Medicine>
+<CodMedicine>004</CodMedicine>
+<NameMedicine>Ринза</NameMedicine>
+<Indications>Для внутреннего применения</Indications>
+<Unitofmeasure>100 г.</Unitofmeasure>
+<Number>10 шт.</Number>
+<manufacturerName>UNIQUE PHARMACEUTICAL Laboratories</manufacturerName>
+</Medicine>
+<Medicine>
+<CodMedicine>005</CodMedicine>
+<NameMedicine>Феброфид</NameMedicine>
+<Indications>Для наружного применения</Indications>
+<Unitofmeasure>100 г.</Unitofmeasure>
+<Number>1 шт.</Number>
+<manufacturerName>Medana Pharma Terpol Group.</manufacturerName>
+</Medicine>
+</Root>
