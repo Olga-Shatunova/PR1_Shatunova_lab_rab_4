@@ -1,0 +1,48 @@
+<html>
+<body>
+<h1>Цветочная продукция</h1>
+<div>
+<b>Код цветка:</b> <span id="flower"></span><br />
+<b>Название цветка:</b>Название цветка <span id="name"></span><br />
+<b>Сорт цветка:</b> <span id="type"></span><br />
+<b>Средняя высота:</b> <span id="height"></span><br />
+<b>Цветущий:</b> <span id="pr"></span><br />
+<b>Дополнительные сведения:</b> <span id="p"></span>
+</div>
+<script>
+txt="<note>";
+txt=txt+"<flower>001</flower>";
+txt=txt+"<name>лилия</name>";
+txt=txt+"<type>лилия регале</type>";
+txt=txt+"<height>15 см</height>";
+txt=txt+"<pr>да</pr>";
+txt=txt+"<p>Великолепный китайский вид - один из самых красивых и распространенных видов трубчатых лилий.</p>";
+txt=txt+"</note>";
+if (window.DOMParser)
+   {
+   parser=new DOMParser();
+   xmlDoc=parser.parseFromString(txt,"text/xml");
+   }
+else // Internet Explorer
+   {
+   xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+   xmlDoc.async=false;
+   xmlDoc.loadXML(txt);
+   }
+document.getElementById("flower").innerHTML=
+xmlDoc.getElementsByTagName("flower")[0].childNodes[0].nodeValue;
+document.getElementById("name").innerHTML=
+xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+document.getElementById("type").innerHTML=
+xmlDoc.getElementsByTagName("type")[0].childNodes[0].nodeValue;
+document.getElementById("height").innerHTML=
+xmlDoc.getElementsByTagName("height")[0].childNodes[0].nodeValue;
+document.getElementById("pr").innerHTML=
+xmlDoc.getElementsByTagName("pr")[0].childNodes[0].nodeValue;
+document.getElementById("p").innerHTML=
+xmlDoc.getElementsByTagName("p")[0].childNodes[0].nodeValue;
+
+</script>
+</body>
+</html>
+
