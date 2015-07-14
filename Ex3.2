@@ -1,0 +1,46 @@
+<html>
+<body>
+<h1>Справочник оборудования/приборов</h1>
+<div>
+<b>Код прибора:</b> <span id="pri"></span><br />
+<b>Название прибора:</b> <span id="name"></span><br />
+<b>Тип прибора:</b> <span id="type"></span><br />
+<b>Дата производства:</b> <span id="date"></span><br />
+<b>Материально ответственное лицо:</b> <span id="pro"></span>
+</div>
+<script>
+txt="<note>";
+txt=txt+"<pri>001</pri>";
+txt=txt+"<name>микроволновая печь</name>";
+txt=txt+"<type>электроприбор</type>";
+txt=txt+"<date>12.12.12</date>";
+txt=txt+"<pro>производитель</pro>";
+txt=txt+"</note>";
+if (window.DOMParser)
+   {
+   parser=new DOMParser();
+   xmlDoc=parser.parseFromString(txt,"text/xml");
+   }
+else // Internet Explorer
+   {
+   xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+   xmlDoc.async=false;
+   xmlDoc.loadXML(txt);
+   }
+document.getElementById("pri").innerHTML=
+xmlDoc.getElementsByTagName("pri")[0].childNodes[0].nodeValue;
+document.getElementById("name").innerHTML=
+xmlDoc.getElementsByTagName("name")[0].childNodes[0].nodeValue;
+document.getElementById("type").innerHTML=
+xmlDoc.getElementsByTagName("type")[0].childNodes[0].nodeValue;
+document.getElementById("date").innerHTML=
+xmlDoc.getElementsByTagName("date")[0].childNodes[0].nodeValue;
+document.getElementById("pro").innerHTML=
+xmlDoc.getElementsByTagName("pro")[0].childNodes[0].nodeValue;
+
+</script>
+</body>
+</html>
+
+
+
