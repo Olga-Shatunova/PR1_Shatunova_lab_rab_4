@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root xmlns="XSD3.xsd"> Цветочная продукция <!—обратите внимание на ссылку на xsd —> <br />
+<Flower> 
+<Codflower>Код цветка</Codflower>
+<NameFlower>Название цветка</NameFlower>
+<ClassFlower>Сорт цветка</ClassFlower>
+<AverageHeight>Средня высота</AverageHeight>
+<Flowering>Цветущий</Flowering>
+<AdditionalInformation>Дополнительная информация</AdditionalInformation>
+</Flower>
+<Flower>
+<Codflower>001</Codflower>
+<NameFlower>Лилия</NameFlower>
+<ClassFlower>Лилия регале</ClassFlower>
+<AverageHeight>15 см</AverageHeight>
+<Flowering>да</Flowering>
+<AdditionalInformation>Великолепный китайский вид - один из самых красивых и распространенных видов трубчатых лилий.Великолепный китайский вид - один из самых красивых и распространенных видов трубчатых лилий.</AdditionalInformation>
+</Flower>
+<Flower>
+<Codflower>002</Codflower>
+<NameFlower>Гладиолус</NameFlower>
+<ClassFlower>Гладиолус византийский</ClassFlower>
+<AverageHeight>60 см</AverageHeight>
+<Flowering>да</Flowering>
+<AdditionalInformation>Произрастает на лесных опушках и лугах в Средиземноморье, передней и Малой Азии (Турции, Сирии, Иране).</AdditionalInformation>
+</Flower>
+<Flower>
+<Codflower>003</Codflower>
+<NameFlower>Роза</NameFlower>
+<ClassFlower>Английская роза</ClassFlower>
+<AverageHeight>90 см</AverageHeight>
+<Flowering>да</Flowering>
+<AdditionalInformation>Получена в результате скрещивания французской, дамасской, бурбонской и других роз с современными сортами чайно-гибридных роз и роз класса флорибунда.</AdditionalInformation>
+</Flower>
+<Flower>
+<Codflower>004</Codflower>
+<NameFlower>Фиалка</NameFlower>
+<ClassFlower>Фиалка алтайская</ClassFlower>
+<AverageHeight>20 см</AverageHeight>
+<Flowering>да</Flowering>
+<AdditionalInformation>Дико произрастает на Алтае, в Западной Сибирь, на юго-востоке Казахстана, в Тянь-Шане, Северо-Западном Китае. </AdditionalInformation>
+</Flower>
+
+<Flower>
+<Codflower>005</Codflower>
+<NameFlower>Алоэ</NameFlower>
+<ClassFlower>Алоэ остролистное</ClassFlower>
+<AverageHeight>10 см</AverageHeight>
+<Flowering>нет</Flowering>
+<AdditionalInformation>Листья изогнутые, покрытые беловатыми наростами и нчиваются тонкой ниткой.</AdditionalInformation>
+</Flower>
+</Root>
